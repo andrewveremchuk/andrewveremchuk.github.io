@@ -156,13 +156,13 @@ footer {
     background: #038042;
 }
 
-@media screen and (max-width: 1450px) {
+@media screen and (max-width: 1240px) {
     .allcontent {
         width: 100%;
     }
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 375px) {
     .baseheader {
         flex-flow:wrap;
         justify-content: center;
