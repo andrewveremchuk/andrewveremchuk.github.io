@@ -22,21 +22,22 @@ header {
 .baseheader {
     display: flex;
     max-width: 1300px ;
-    width: 90%;
+    width: 95%;
     height: 72px;
     justify-content: space-between;
     flex-direction: row;
-    margin 10px 10px; }
+    margin 10px 10px; 
+}
 
 .header1 {
     background-color: #009bdd;
-    width : 425px;
+    width : 400px;
     height : 100%;
 }
 
 .header2 {
     background-color: #36c3ff;
-    width: 425px;
+    width: 400px;
     height: 100%;
 }
 
