@@ -1,0 +1,267 @@
+body {
+    display: flex;
+}
+
+.container {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    flex-flow: wrap;
+    justify-content: center;
+}
+
+header {
+    display: flex;
+    background-color: #00aeff;
+    width: 100%;
+    height: 145px;
+    justify-content: center;
+    align-items: center;
+}
+
+.baseheader {
+    display: flex;
+    max-width: 1300px ;
+    width: 90%;
+    height: 72px;
+    justify-content: space-between;
+    flex-direction: row;
+    margin 10px 10px; }
+
+.header1 {
+    background-color: #009bdd;
+    width : 425px;
+    height : 100%;
+}
+
+.header2 {
+    background-color: #36c3ff;
+    width: 425px;
+    height: 100%;
+}
+
+.allcontent {
+    display: flex;
+    width: 90%;
+    flex-direction: row;
+    max-width: 1300px;
+    justify-content: center;
+}
+
+aside {
+    display: flex;
+    width: 20%;
+    height: 750px;
+    background-color: #FF5607;
+    justify-content: flex-start;
+    flex-direction: column;
+    align-items: center;
+}
+
+aside div {
+    background-color: #E84900;
+    height: 35px;
+    margin-top: 20px;
+    justify-content: space-between;
+    width: 80%;
+}
+
+content {
+    height: 750px;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+}
+
+.top_content {
+    height: 40%;
+    display: flex;
+    flex-direction: row;
+}
+
+.pic {
+    width: 45%;
+    background: #FFBD00;
+    margin: 15px 35px 0px 11px ;
+}
+
+.top_content_text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    width: 55% ;
+}
+
+.top_content_text_head {
+    width: 100%;
+    height: 40px;
+    background: #9D9D9D;
+    margin-top: 15px;
+}
+
+.top_content_text_parts {
+    width: 100%;
+    height: 30px;
+    background: #CECECE;
+    margin-top: 17px;
+}
+
+.bot_content {
+    height: 60%;
+    display: flex 
+    flex-direction: column;
+    padding-left: 10px;
+    margin-top: 20px;
+}
+
+.bot_content_parts {
+    width: 100%;
+    height: 30px;
+    background: #CECECE;
+    margin-bottom: 20px;
+}
+
+footer {
+    display: flex;
+    width: 100%;
+    height: 270px;
+    background: #00D169;
+    justify-content: center;
+    align-items: center;
+}
+
+.allfootersmenu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 90%;
+    height: 80%;
+    max-width: 1000px;
+}
+
+.footer_menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    height: 100%;
+    width: 24%;
+    background: #02B15A;
+}
+
+.footer_menu div {
+    width: 80%;
+    height: 30px;
+    background: #038042;
+}
+
+@media screen and (max-width: 1450px) {
+    .allcontent {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .baseheader {
+        flex-flow:wrap;
+        justify-content: center;
+    }
+
+    .header1 {
+        margin-top: -15px;
+        height: 60%;
+    }
+
+    .header2 {
+        margin-top: 15px;
+        height: 60%;
+    }
+
+    
+    .allcontent {
+        flex-direction: column;
+        align-items: center;
+        height: 1250px;
+        box-sizing: border-box;
+    }
+
+    aside {
+        width: 100%;
+        height: 100px;
+        flex-direction: row;
+        flex-flow: wrap;
+        justify-content: space-around;
+    }
+
+    aside div:nth-last-child(5), aside div:nth-last-child(4) {
+        display: none;
+    }
+
+    aside div {
+        width: 30%;
+        margin-top: 0;
+    }
+
+    content {
+        width: 100%;
+        height: 1150px;
+    }
+
+    .top_content {
+        flex-direction: column;
+        align-items: center;
+        height: 650px;
+    }
+
+    .pic {
+        width: 100%;
+        height: 350px;
+        margin: 0;
+    }
+
+    .top_content_text {
+        width: 90%;
+        height: 300px;
+    }
+
+    .bot_content {
+        height: 500px;
+        width: 90%;
+        padding-left: 0;
+        align-self: center;
+    }
+
+    .bot_content_parts {
+        height: 30px
+    }
+
+    .allfootersmenu {
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        width: 90%;
+        height: 100%;
+    }
+
+    .footer_menu div:nth-last-child(2), .footer_menu div:nth-last-child(3), .footer_menu div:nth-last-child(4) {
+        display: none;
+    }
+
+    .footer_menu {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: space-around;
+        height: 100%;
+        width: 100%;
+        background: #02B15A;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    .footer_menu div {
+        width: 55%;
+        height: 50%;
+        margin-left: 20px;
+    }
+}
