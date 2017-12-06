@@ -1,4 +1,8 @@
-var Event= prompt("Input event","dancing lessons")
+var Event= prompt("Input event","dancing lessons");
+while (Event == "") {
+    alert("please enter the event");
+    var Event = prompt("Input event","dancing lessons");
+}
 
 var FirstName= "John"; 
 var LastName= "Lennon";
